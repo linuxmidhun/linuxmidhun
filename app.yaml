@@ -1,0 +1,33 @@
+application: linuxmidhun
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: ico\.ico
+  
+- url: /js
+  static_dir: js
+  
+- url: /theme
+  static_dir: theme
+  
+- url: /images
+  static_dir: images
+ 
+- url: /(.*\.(gif|png|jpg|psd|txt|md|git|gitattributes|gitignore))
+  static_files: static/\1
+  upload: static/(.*\.(gif|png|jpg|psd|txt|md|git|gitattributes|gitignore))
+
+- url: .*
+  script: main.app
+  
+libraries:
+- name: webapp2
+  version: "2.5.1"
+ 
+- name: jinja2
+  version: latest

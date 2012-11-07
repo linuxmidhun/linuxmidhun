@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* tags-start */
+
+body{
+	overflow:auto;
+	/*background:#FFFFFD;
+	background:#FFFFFF;*/
+	/*background:#e9f3f9;*/
+	background:#9CD5F3;
+	background-image:url('../images/image.png');
+	background-attachment:fixed;
+	background-size:100% 1000px;
+	background-size:70% 80%;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+}
+
+/* tags-end */
+/* ============================================ */
+/* classes-start */
+
+.head{
+	color:#FF8247;
+	color:white;
+	font-size:55px;
+	font:verdana;
+	cursor:pointer;
+	text-decoration:none;
+	/*background:#7D9EC0;
+	background:#fbe4f1;*/
+	display:block;
+	/*border-bottom:thin solid red;*/
+}
+.head:hover{
+	/*text-shadow:0 0 25px silver;*/
+}
+.topLink{
+	text-decoration:none;
+	color:whitesmoke;
+	color:#7D9EC0;
+	text-decoration:none;
+	font-size:24Px;
+}
+.topLink:hover{
+	background:ivory;
+	color:lightskyblue;
+}
+.topLinkActive{
+	text-decoration:none;
+	background:ivory;
+	text-decoration:none;
+	/*text-shadow:0 0 5Px lightskyblue;
+	/*border-bottom:5px Solid red;*/
+	/*border:5px solid lightskyblue;*/
+	/*font-size:30Px;*/
+	font-size:24px;
+	color:lightskyblue;
+}
+.caption{
+	color:red;
+	font-size:26px;
+	display:block;
+	text-indent:10px;
+}
+.para{	
+	width:90%;
+	color:whitesmoke;
+	font-family:Courier New;
+	font-family:Lucida Console;
+	font-size:22px;
+	display:block;
+	text-align:left;
+}
+.para::selection{
+	background-color:whitesmoke;
+	color:red;
+}
+.company{
+	width:90%;
+	display:block;
+	text-align:left;
+	border-left:1px solid white;
+}
+.company img{
+	width:150px;
+	height:70px;
+	background:white;
+}
+.company p{
+	color:whitesmoke;
+}
+/* classes-end */
+/* ============================================ */
+/* elements-start */
+
+#outer-wrapper{
+	vertical-align:middle;
+	text-align:left;
+}
+
+#linkBar{
+	text-align:right;
+	/*border-top:5px Solid orange;
+	border-bottom:5px Solid whitesmoke;*/
+	background:lightskyblue;
+	width:99%;
+	position:fixed;
+	z-index:10000;
+	/*border:3px dashed #9CD5F3;*/
+	background:#E2EEEC;
+	background:url('../images/linkBar.png') repeat-x;
+}
+#content{
+	width:400px;
+	text-align:left;
+	vertical-align:top;
+	font:verdana;
+	font-size:20px;
+	overflow:auto;
+	background:black;
+	opacity:0.7;
+	border:5px solid whitesmoke;
+	
+}
+#slide-div{
+	background:white;
+	border:5px solid whitesmoke;
+	height:200px;
+}
+/* elements-end */
