@@ -11,7 +11,7 @@ body{
 	background:#9CD5F3;
 	background:#e9f3f9;
 	background:white;
-	background:url('../images/Bubbles.png'),url('../images/image1.png');
+	background:url('../images/Bubbles.png'),url('../images/image.png');
 	background-attachment:fixed,fixed;
 	background-size:100% 100%,30% 30%;
 	background-repeat:no-repeat,no-repeat;
@@ -100,6 +100,7 @@ body{
 	text-decoration:none;
 	vertical-align:top;
 	color:whitesmoke;
+	font-size:23px;
 }
 .social-link:hover{
 	color:silver;
@@ -115,6 +116,15 @@ body{
 .social-link a{
 	text-decoration:none;
 	color:whitesmoke;
+}
+.whitecontent{
+	color:gray;
+	font:verdana;
+	font-size:28px;
+	display:block;
+	width:90%;
+	margin-left:15px;
+	position:fixed;
 }
 /* classes-end */
 /* ============================================ */
@@ -135,7 +145,7 @@ body{
 	z-index:10000;
 	/*border:3px dashed #9CD5F3;*/
 	background:#E2EEEC;
-	background:url('../images/linkBar.png') repeat-x;
+	background:url('../images/linkBar.png');
 }
 #content{
 	width:400px;
