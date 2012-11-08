@@ -41,6 +41,15 @@ class AboutPage(webapp2.RequestHandler):
         self.response.out.write(template.render({}))
         template = jinja_environment.get_template('footer.html')
         self.response.out.write(template.render({}))
+
+class Social(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('header.html')
+        self.response.out.write(template.render({}))
+        template = jinja_environment.get_template('social.html')
+        self.response.out.write(template.render({}))
+        template = jinja_environment.get_template('footer.html')
+        self.response.out.write(template.render({}))
         
 class Login(webapp2.RequestHandler):
     def get(self):
@@ -72,6 +81,7 @@ class Verify(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([('/', MainPage),
                                ('/home', MainPage),
                                ('/work', AboutPage),
+                               ('/social', Social),
                                ('/admin', Login),
                                ('/in', Check),
                                ('/admin-home', AdminHome),
